@@ -1,0 +1,141 @@
+/* ---------- GENERAL PAGE STYLING ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7ff;
+    color: #333;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+    background: #1e3a8a;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dbeafe;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* ---------- BANNER ---------- */
+.banner {
+    background: url('images/banner.jpg') no-repeat center/cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-shadow: 1px 1px 5px black;
+}
+
+.banner h1 {
+    font-size: 42px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+/* ---------- CARDS ---------- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #3b82f6;
+}
+
+/* ---------- FORM ---------- */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+form button {
+    background: #1e3a8a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #3b82f6;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #1e3a8a;
+    color: #c7d2fe;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
